@@ -1,0 +1,20 @@
+{"domain": "code_analysis", "nl": "Encuentra los bugs de esta funcion y corrigelos, muestrame el resultado en secciones separadas.", "action": ["dbg", "eval", "fix"], "in": ["fn"], "out": ["bugs", "patched_fn"], "fmt": "sections"}
+{"domain": "code_analysis", "nl": "Refactoriza esta clase para que sea mas legible sin cambiar su comportamiento.", "action": ["refactor"], "in": ["class"], "out": ["refactored_class"], "constraint": ["preserve_behavior"]}
+{"domain": "code_analysis", "nl": "Explica que hace este algoritmo paso a paso.", "action": ["explain"], "in": ["algorithm"], "out": ["steps"]}
+{"domain": "code_analysis", "nl": "Analiza la complejidad temporal y espacial de esta funcion.", "action": ["analyze"], "in": ["fn"], "out": ["time_complexity", "space_complexity"]}
+{"domain": "code_analysis", "nl": "Genera pruebas unitarias para este modulo cubriendo los casos limite.", "action": ["gen_tests"], "in": ["module"], "out": ["unit_tests"], "constraint": ["cover_edge_cases"]}
+{"domain": "info_extraction", "nl": "Extrae los nombres de personas y organizaciones mencionadas en este articulo.", "action": ["extract"], "in": ["article"], "out": ["people", "organizations"]}
+{"domain": "info_extraction", "nl": "Saca los datos de contacto (email, telefono, direccion) de este curriculum.", "action": ["extract"], "in": ["resume"], "out": ["email", "phone", "address"]}
+{"domain": "info_extraction", "nl": "Resume este informe y extrae las cifras clave de ventas.", "action": ["summarize", "extract"], "in": ["report"], "out": ["summary", "sales_figures"]}
+{"domain": "info_extraction", "nl": "Identifica los requisitos funcionales mencionados en este correo del cliente.", "action": ["extract"], "in": ["email"], "out": ["requirements"], "fmt": "bullets"}
+{"domain": "info_extraction", "nl": "Extrae las fechas y montos de esta factura en formato tabla.", "action": ["extract"], "in": ["invoice"], "out": ["dates", "amounts"], "fmt": "table"}
+{"domain": "structured_reasoning", "nl": "Compara estas tres opciones de arquitectura y dime cual conviene mas.", "action": ["compare", "recommend"], "in": ["options"], "out": ["comparison", "recommendation"]}
+{"domain": "structured_reasoning", "nl": "Descompon este problema complejo en subproblemas manejables.", "action": ["decompose"], "in": ["problem"], "out": ["subproblems"]}
+{"domain": "structured_reasoning", "nl": "Haz un analisis de causa raiz de esta falla en produccion.", "action": ["analyze"], "in": ["incident"], "out": ["root_cause"], "fmt": "sections"}
+{"domain": "structured_reasoning", "nl": "Arma una matriz de decision para elegir proveedor de nube.", "action": ["build_matrix"], "in": ["criteria", "vendors"], "out": ["decision_matrix"], "fmt": "table"}
+{"domain": "structured_reasoning", "nl": "Disena un plan paso a paso para migrar la base de datos sin downtime.", "action": ["plan"], "in": ["migration_goal"], "out": ["steps"], "constraint": ["zero_downtime"]}
+{"domain": "creative_generation", "nl": "Escribe un cuento corto de ciencia ficcion sobre una IA que aprende a sonar.", "action": ["gen_story"], "in": ["premise"], "out": ["story"], "constraint": ["max 500 words"]}
+{"domain": "creative_generation", "nl": "Genera tres eslogans creativos para una marca de cafe organico.", "action": ["gen_copy"], "in": ["brand_brief"], "out": ["slogans"], "constraint": ["count 3"]}
+{"domain": "creative_generation", "nl": "Propon cinco nombres originales para una startup de logistica verde.", "action": ["brainstorm"], "in": ["startup_brief"], "out": ["names"], "constraint": ["count 5"]}
+{"domain": "creative_generation", "nl": "Escribe un poema breve sobre el paso del tiempo en la ciudad.", "action": ["gen_poem"], "in": ["theme"], "out": ["poem"]}
+{"domain": "creative_generation", "nl": "Redacta un dialogo entre dos personajes que se reencuentran despues de anos.", "action": ["gen_dialogue"], "in": ["characters", "context"], "out": ["dialogue"]}

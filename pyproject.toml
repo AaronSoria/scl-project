@@ -1,0 +1,26 @@
+[project]
+name = "scl"
+version = "0.1.0"
+description = "SCL (Structured Compressed Language) — lenguaje de prompts compacto y ontologico para LLMs"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+translate = [
+    "ollama>=0.4",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
